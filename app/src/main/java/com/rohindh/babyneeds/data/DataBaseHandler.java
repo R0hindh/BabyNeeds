@@ -7,6 +7,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 
 import com.rohindh.babyneeds.model.Items;
@@ -51,7 +52,7 @@ public class DataBaseHandler extends SQLiteOpenHelper {
         values.put(Constants.KEY_BABY_ITEM,item.getItemName());
 //        values.put(Constants.KEY_ID,item.getId());
         values.put(Constants.KEY_ITEM_SIZE,item.getItemSize());
-
+        Log.d("hai","i work fine");
         values.put(Constants.KEY_QTY_NUMBER,item.getItemQuantity());
         values.put(Constants.KEY_COLOR,item.getItemColor());
         values.put(Constants.KEY_DATA_NAME,java.lang.System.currentTimeMillis());
